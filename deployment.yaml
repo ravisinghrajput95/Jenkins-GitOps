@@ -17,7 +17,7 @@ spec:
         app: jenkins-gitops
     spec:
       containers:
-      - image: rajputmarch2020
+      - image: rajputmarch2020/test:latest
         name: jenkins-gitops
         resources: {}
 status: {}
