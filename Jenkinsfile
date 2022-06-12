@@ -9,7 +9,7 @@ node {
     }
 
     stage('Build image') {
-        app = docker.build("raj80dockerid/test")
+        app = docker.build("rajputmarch2020/test")
     }
 
     stage('Push image') {
