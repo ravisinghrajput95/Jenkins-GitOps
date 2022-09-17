@@ -5,22 +5,18 @@ metadata:
     app: jenkins-gitops
   name: jenkins-gitops
 spec:
-  replicas: 
+  replicas: 1
   selector:
     matchLabels:
       app: jenkins-gitops
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: jenkins-gitops
     spec:
       containers:
       - image: rajputmarch2020/test:8
         name: jenkins-gitops
-        resources: {}
-status: {}
 ---
 apiVersion: v1
 kind: Service
